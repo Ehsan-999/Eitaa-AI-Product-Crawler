@@ -1,0 +1,11 @@
+requests
+python-dotenv
+redis
+rq
+psycopg2-binary
+sqlalchemy
+fastapi
+uvicorn
+pgvector
+openai
+eitaa  # کتابخانه رسمی کار با API ایتا (eitaapykit)

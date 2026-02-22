@@ -1,0 +1,18 @@
+services:
+  eitaa_postgres:
+    image: pgvector/pgvector:pg15
+    container_name: eitaa_postgres
+    environment:
+      POSTGRES_DB: eitaa
+      POSTGRES_USER: eitaa_user
+      POSTGRES_PASSWORD: eitaa_pass
+    ports:
+      - "5432:5432"
+    restart: always
+
+  eitaa_redis:
+    image: redis:7
+    container_name: eitaa_redis
+    ports:
+      - "6379:6379"
+    restart: always
